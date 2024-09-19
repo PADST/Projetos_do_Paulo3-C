@@ -26,20 +26,19 @@
         <div class="video-item">
             <h2>Vídeo 1</h2>
             <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
+                <source src="RDT_20240711_164038.mp4" type="video/mp4">
             </video>
         </div>
         <div class="video-item">
             <h2>Vídeo 2</h2>
             <video controls>
-                <source src="video2.mp4" type="video/mp4">
+                <source src="RDT_20240904_203020.mp4" type="video/mp4">
             </video>
         </div>
         <div class="video-item">
-            <h2></h2>
+            <h2>Vídeo 3</h2>
             <video controls>
-                <source src="video3.mp4" type="video/mp4">
+                <source src="RDT_20240919_091404.mp4" type="video/mp4">
             </video>
         </div>
     </div>
