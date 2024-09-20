@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Conteúdo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .preco {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assine Nosso Conteúdo Exclusivo!</h1>
+    </header>
+    <section>
+        <h2>Sobre o Conteúdo</h2>
+        <p>Faça um curso de desenvolvimento de jogos sem programação em uma engine sem peso no mercado de jogos por um preço exorbitante com o Nescauzin!</p>
+        
+        <h2>Preços</h2>
+        <div class="preco">R$ 299,99 ou 12 parcelas de R$25,99</div>
+
+        <h2>Inscreva-se</h2>
+        <form id="form-assinatura">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <button type="submit">Assinar</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('form-assinatura').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            alert(`Obrigado, ${nome}! Você se inscreveu com o email: ${email}`);
+            document.getElementById('form-assinatura').reset();
+        });
+    </script>
+</body>
+</html>
